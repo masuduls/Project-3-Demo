@@ -1,0 +1,107 @@
+h1 {
+    font-size: 100px;
+}
+
+body {
+    background-color: rgba(66, 101, 141, 0.74);
+    text-align: center;
+    font-family: Impact, fantasy;
+    color: rgb(12, 13, 99);
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+progress {
+    width: 50%;
+    height: 60px;
+    color: rgb(138, 36, 36);
+}
+
+.playerBox {
+    margin: 20px 0;
+}
+
+.cpuBox {
+    margin: 20px 0;
+}
+
+
+.playerStats {
+    font-size: 30px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.cpuStats {
+    font-size: 30px;
+    margin: 20px 0;
+    text-align: right;
+}
+
+.stat {
+    margin: 10px 0;
+    
+}
+
+.gameLog {
+    background-color: rgb(34, 22, 87);
+    color: black;
+    padding: 20px;
+    text-align: left;
+    max-width: 500px; 
+    overflow: scroll; /* adds a scroll */
+    height: 600px; 
+    border-radius: 25px;
+    font-size: 30px;
+}
+
+.buttons{
+    margin-top: 100px;
+}
+
+#attackButton, #blockButton, #finishingMoveButton {
+    padding: 20px 100px;
+    margin: 0 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 40px;
+    font-family: Impact, fantasy;
+    transition: background-color 0.15s;
+}
+
+#attackButton:hover {
+    color:white;
+    background-color:rgb(170, 51, 51);
+}
+
+#blockButton:hover {
+    color:white;
+    background-color:rgb(88, 162, 184);
+}
+
+#finishingMoveButton:hover{
+    color:white;
+    background-color: rgb(241, 55, 170);
+}
+
+.column {
+    flex: 1; /* all the divs take up similar space */
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 10px;
+}

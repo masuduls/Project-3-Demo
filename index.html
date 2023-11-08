@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masudul Shafi Project 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body onload="randomizeStats();">
+    <div class="header">
+        <h1>One on One Fighter Project</h1>
+    </div>
+    <div class="container">
+        <div class="column">
+            <progress id="playerFatigue" value="" max=""></progress>
+            <div class="playerBox">
+                <img id = "playerSprite" src="Boxer-Sprites/stillP1.png" alt="Player Sprite">
+            </div>
+            <div class="playerStats">
+                <div class="stat">
+                    <p>Player Strength: <span id="playerStrength">0</span></p>
+                </div>
+                <div class="stat">
+                    <p>Player Speed: <span id="playerSpeed">0</span></p>
+                </div>
+                <div class="stat">
+                    <p>Player Cunning: <span id="playerCunning">0</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="column gameLog">
+            <div id="logContent">Log:</div>
+        </div>
+        <div class="column">
+            <progress id="cpuFatigue" value="" max=""></progress>
+            <div class="cpuBox">
+                <img id = "cpuSprite" src="Boxer-Sprites/stillCPU.png" alt="CPU Sprite">
+            </div>
+            <div class="cpuStats">
+                <div class="stat">
+                    <p>AI Strength: <span id="cpuStrength">0</span></p>
+                </div>
+                <div class="stat">
+                    <p>AI Speed: <span id="cpuSpeed">0</span></p>
+                </div>
+                <div class = "stat">
+                    <p>AI Cunning: <span id="cpuCunning">0</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = buttons>
+        <button id="attackButton">Attack</button>
+        <button id="blockButton">Block</button>
+        <button id="finishingMoveButton" disabled>Finishing Move</button>
+    </div>
+    <script src="utilities.js"></script>
+</body>
+</html>
